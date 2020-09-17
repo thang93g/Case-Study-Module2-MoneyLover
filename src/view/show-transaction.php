@@ -14,7 +14,7 @@
     <form method="post" action="index.php?page=search-transaction&wid=<?php echo $wallet['id'] ?>">
         <div style="color: white">From:</div><input type="date" name="from">
         <div style="color: white">To:</div><input type="date" name="to">
-        <input type="submit" value="Search">
+        <input class="btn btn-light" type="submit" value="Search">
     </form>
 <table class="table table-striped">
     <thead>

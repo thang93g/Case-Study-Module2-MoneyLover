@@ -16,7 +16,7 @@ class CategoryModel
 
     public function getAll()
     {
-        $sql = "SELECT * FROM `categories`";
+        $sql = "SELECT * FROM `categories` ORDER BY id";
         $stmt = $this->database->query($sql);
         $data = $stmt->fetchAll();
         $arr = [];

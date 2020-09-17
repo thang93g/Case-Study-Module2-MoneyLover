@@ -9,8 +9,9 @@
         background-color: white;
     }
 </style>
+<div class="container">
 <form method="post">
-    <h1>Edit wallet</h1>
+    <h1 style="color: white">Edit wallet</h1>
     <table class="table">
         <tr>
             <th>Wallet name</th>
@@ -21,8 +22,9 @@
             <td><input type="number" name="money" value="<?php echo $wallet['money'] ?>"></td>
         </tr>
         <tr>
-            <td><input type="submit" value="Submit"></td>
-            <td><a href="index.php">Cancel</a> </td>
+            <td><input class="btn btn-success" type="submit" value="Submit"></td>
+            <td><a class="btn btn-secondary" href="index.php">Cancel</a> </td>
         </tr>
     </table>
 </form>
+</div>

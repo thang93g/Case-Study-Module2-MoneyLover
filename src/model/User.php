@@ -8,11 +8,28 @@ class User
 {
     protected $username;
     protected $password;
+    protected $createDate;
 
     public function __construct($username, $password)
     {
         $this->username = $username;
         $this->password = $password;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCreateDate()
+    {
+        return $this->createDate;
+    }
+
+    /**
+     * @param mixed $createDate
+     */
+    public function setCreateDate($createDate): void
+    {
+        $this->createDate = $createDate;
     }
 
     /**

@@ -9,6 +9,8 @@
         background-color: white;
     }
 </style>
+<div class="container">
+    <h1>Add transaction</h1>
 <form method="post">
     <table class="table">
         <tr>
@@ -30,8 +32,9 @@
             <td><input type="text" name="description"></td>
         </tr>
         <tr>
-            <td><input type="submit" value="Submit"></td>
-            <td><input type="button" value="Cancel" href="index.php"></td>
+            <td><input class="btn btn-success" type="submit" value="Submit"></td>
+            <td><a class="btn btn-secondary" href="index.php">Cancel</a></td>
         </tr>
     </table>
 </form>
+</div>

@@ -10,11 +10,12 @@
         background-color: white;
     }
 </style>
+<div class="container">
 <table class="table">
     <tr>
-        <th colspan="3">Wallet details</th>
-        <td><a href="index.php?page=edit-wallet&id=<?php echo $wallet['id'] ?>">Edit</a></td>
-        <td><a href="index.php?page=delete-wallet&id=<?php echo $wallet['id'] ?>">Delete</a></td>
+        <th colspan="2">Wallet details</th>
+        <td><a class="btn btn-outline-success" href="index.php?page=edit-wallet&id=<?php echo $wallet['id'] ?>">Edit</a></td>
+        <td><a onclick="return confirm('Are you sure?')" class="btn btn-outline-danger" href="index.php?page=delete-wallet&id=<?php echo $wallet['id'] ?>">Delete</a></td>
     </tr>
     <tr>
         <th rowspan="2"><img height="50" width="50" src="image/icon.png"></th>
@@ -22,10 +23,6 @@
     </tr>
     <tr>
         <td><?php echo $currency ?></td>
-    </tr>
-    <tr>
-        <th>User</th>
-        <td>ten user</td>
     </tr>
     <tr>
         <th>Inflow</th>
@@ -41,3 +38,4 @@
     </tr>
 </table>
 <a class="btn btn-light" href="index.php">Back</a>
+</div>

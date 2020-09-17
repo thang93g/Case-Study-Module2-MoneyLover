@@ -23,4 +23,14 @@ class UserManager
         $statement->execute();
         return $statement->fetch();
     }
+
+    public function changePassword($id,$password)
+    {
+        $sql = "UPDATE `users` SET `password`=:password WHERE id = :id";
+        $stmt = $this->databaseUser->prepare($sql);
+        $stmt->bindParam(":id",$id);
+        $stmt->bindParam(":password",$password);
+        $stmt->execute();
+    }
+
 }
